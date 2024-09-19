@@ -1,3 +1,16 @@
+/**    how many digits are there in a given number
+ *     1. check if digits are  there
+ *          n>0;
+ *      2. remove last element from the number
+ *          n = n/10;
+ *      3. increase the count after removing
+ *          count++;
+ *      4 . repeat the above steps until there are digits present
+ */
+
+
+
+
 import java.util.Scanner;
 
 
