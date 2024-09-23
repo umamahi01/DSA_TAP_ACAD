@@ -7,7 +7,7 @@ Stack ==>
                                 -> 1.push();
                                 -> 2.pop();
        
-        stack is data structure that can be implemeted using other data structures 
+        stack is a data structure that can be implemeted using other data structures 
                                 -> Arrays
                                 -> list ->1.ArrayList
                                         ->2.LinkedList

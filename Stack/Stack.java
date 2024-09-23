@@ -12,13 +12,16 @@ class StackUnderFlowException extends Exception{
 class Stack{
     ArrayList<Integer> al;
     int top;
+    
     public Stack(){
         this.al = new ArrayList<Integer>();
         this.top = -1;
     }
+
     void push(int elem){
         al.add(elem);
     }
+
     int pop() throws StackUnderFlowException{
         if(al.size() == 0) {
             throw new StackUnderFlowException();
