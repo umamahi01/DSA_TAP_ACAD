@@ -19,7 +19,7 @@ LinkedList:-
                     -> 2.size should be specified while creating an arrays
 
                     -> 3. insertion an element at any given postion will take (n+1) shifting 
-                            (for ex:- if we want to add an element at index 0 we cannot at without replacing it or worst case
+                            (for ex:- if we want to add an element at index 0 we cannot add without replacing it or worst case
                             without shifting the other elements).
 
                     -> 4. if we delete a element at an index the memory become unused 
@@ -37,7 +37,7 @@ operations:-
     * 1.creating a LinkedList 
             -> to create a linkedlist first we need to create a node.
             -> Node has two things/parts 1.data
-                                         2.next node address(that is only called next_node_address(so basically it is a pointer that will point to next node))
+                                         2.next node address(that is only called next(so basically it is a pointer that will point to next node))
     * 2.Add element at first.
     * 3.Add element at last.
     *4.traverse an linkedlist.
