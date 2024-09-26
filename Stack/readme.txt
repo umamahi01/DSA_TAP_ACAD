@@ -23,5 +23,5 @@ StackOverFlow =>
                 StackOverFlow Condition.
 
 StackUnderFlow =>
-                when the are no elements inside the stack  and we try to pop/remove the element from the 
+                when they are no elements inside the stack  and we try to pop/remove the element from the 
                 stack it will cause StackUnderFlow Condition.

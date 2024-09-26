@@ -43,3 +43,23 @@ operations:-
     *4.traverse an linkedlist.
 
 
+properties of a LinkedList:-
+===========================
+        * 1.every LinkedList will have one reference that is nothing but head
+        * 2. head will always pointing to the first node of the List
+        * 3.if head is null there is  no elements in linkedlist.
+
+        2.linked list is a collection nodes and every node has two parts 
+                                                                1=> data
+                                                                2=> next node address
+        3.last node next part is always null.
+
+Adding Elements Into the List:-
+=============================
+
+        create a new node
+        
+        if head == null;
+           make new node as head;
+        else
+            add new node at last;
