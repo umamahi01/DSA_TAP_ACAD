@@ -144,7 +144,15 @@ class LinkedList{
     }
 
 
-
+    int indexOf(int element){
+       int count=0;
+       Node current =head;
+       while(current.next!=null && current.data != element) {
+            current= current.next;
+            count++;
+       }
+       return count>=0?count:-1;
+    }
 
 
 
@@ -164,7 +172,8 @@ class MainLinkedList{
         list.add(70);//3
         list.addFirst(100);
         list.add(2, 900);
-   
+        int res =list.indexOf(70);
+        System.out.println(res);
         list.printLinkedList();
     
     
