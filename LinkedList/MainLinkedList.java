@@ -143,20 +143,48 @@ class LinkedList{
         return data;
     }
 
-
+    //returns index of an element in the list
     int indexOf(int element){
        int count=0;
        Node current =head;
-       while(current.next!=null && current.data != element) {
+       while(current.next!=null) {
+            if(current.data == element){
+                return count;
+            }
             current= current.next;
             count++;
        }
-       return count>=0?count:-1;
+       return -1;
+    }
+    
+
+    //returns size of linkedlist
+    int size(){
+        int count =0;
+        Node current = head;
+        while(current !=null){
+            count++;
+            current = current.next;
+        }
+        return count>=0?count:-1;
+        
     }
 
-
-
-
+    //return last index of an element
+    int lastIndexOf(int element){
+        int count =0;
+        Node current = head;
+        int index =-1;
+        while(current !=null){
+            if(current.data == element){
+                index = count;
+            }
+            current= current.next;
+            count++;
+        }
+        return index;
+    }
+    
 }
 
 class MainLinkedList{
@@ -172,8 +200,10 @@ class MainLinkedList{
         list.add(70);//3
         list.addFirst(100);
         list.add(2, 900);
-        int res =list.indexOf(70);
-        System.out.println(res);
+        int res =list.indexOf(700);
+        System.out.println("index"+res);
+        System.out.println("index"+list.lastIndexOf(700));
+        System.out.println(list.size());
         list.printLinkedList();
     
     
