@@ -26,6 +26,7 @@ class LinkedList{
     //prints the element in the linkedlsit
     void printLinkedList(){
         Node current_Node = head;
+        
         while(current_Node!= null){
             System.out.print(current_Node.data+" ");
             current_Node = current_Node.next;
@@ -34,7 +35,7 @@ class LinkedList{
 
     //add a element into the list;
     void add(int data){
-        Node  e = new Node(data);;
+        Node  e = new Node(data);
         if(head==null){
            
             head = e;
@@ -192,18 +193,10 @@ class MainLinkedList{
     public static void main(String [] args){
        
         LinkedList list = new LinkedList();
-        int arr []= {3,4,5,6};
-        list.addAll(arr);
+       
         list.add(30);//0
-        list.add(40);//1
-        list.add(60);//2
-        list.add(70);//3
-        list.addFirst(100);
-        list.add(2, 900);
-        int res =list.indexOf(700);
-        System.out.println("index"+res);
-        System.out.println("index"+list.lastIndexOf(700));
-        System.out.println(list.size());
+        
+       
         list.printLinkedList();
     
     
