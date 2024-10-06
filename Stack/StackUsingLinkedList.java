@@ -10,26 +10,30 @@ class Node{
 
 class Stack{
     Node top;
-    void Push(int elem){
+    void push(int elem){
         Node e = new Node(elem);
         if(top == null){
             top  = e;
         }
         else{
-            Node temp =top.next;
-            top = temp;
+             e.next =top;
+            top =e;
         }
     }
 
 
     int pop(){
         int elem  = top.data;
-        Node prev = top;
-        prev.next =null;
-        
         top = top.next;
         
         return elem;
+    }
+    public void display(){
+        Node current = top;
+        while(current != null){
+            System.out.println(current.data);
+            current = current.next;
+        }
     }
 
 }
@@ -38,6 +42,12 @@ class Stack{
 
 public class StackUsingLinkedList {
     public static void main(String [] args){
+        Stack s = new Stack();
+        s.push(70);
+        s.push(50);
+        s.push(500);
+        s.pop();
+        s.display();
 
     }
     
